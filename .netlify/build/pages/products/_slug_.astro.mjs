@@ -1,0 +1,201 @@
+/* empty css                                    */
+import { h as createAstro, i as createComponent, r as renderComponent, n as renderTemplate, m as maybeRenderHead, g as addAttribute } from '../../chunks/astro/server_DbGe-HVW.mjs';
+import 'piccolore';
+import { $ as $$BaseLayout } from '../../chunks/BaseLayout_Dnki7kbs.mjs';
+export { renderers } from '../../renderers.mjs';
+
+const $$Astro = createAstro("https://aurora-sunglasses.com");
+const prerender = false;
+const $$slug = createComponent(($$result, $$props, $$slots) => {
+  const Astro2 = $$result.createAstro($$Astro, $$props, $$slots);
+  Astro2.self = $$slug;
+  const products = [
+    {
+      name: "Polarized Sunglasses",
+      slug: "sunglasses",
+      title: "Polarized Sunglasses & UV Protection | Aurora Eyewear OEM",
+      description: "High-quality polarized sunglasses with UV400 protection. Custom OEM designs available. Wholesale pricing for retailers. Bulk orders welcome.",
+      keywords: ["polarized sunglasses", "UV protection sunglasses", "wholesale sunglasses", "OEM sunglasses", "custom sunglasses", "bulk sunglasses", "designer sunglasses"],
+      features: [
+        "UV400 Protection - Blocks 100% of harmful UVA and UVB rays",
+        "Polarized Lenses - Reduces glare for enhanced visual clarity",
+        "Premium Materials - Durable frames with scratch-resistant lenses",
+        "Custom Logo - OEM branding options available",
+        "Multiple Styles - Aviator, wayfarer, cat-eye, and more",
+        "Quality Certified - Meets international safety standards"
+      ],
+      applications: [
+        "Retail stores and optical shops",
+        "Fashion boutiques",
+        "Department stores",
+        "Online eyewear retailers",
+        "Corporate gifts and promotions",
+        "Reseller and distributor programs"
+      ],
+      icon: "\u{1F576}\uFE0F"
+    },
+    {
+      name: "Reading Glasses",
+      slug: "reading-glasses",
+      title: "Reading Glasses & Prescription Readers | Aurora Optical",
+      description: "Stylish reading glasses with precise lenses. Multiple magnification levels. Custom frames available for retailers and distributors.",
+      keywords: ["reading glasses", "prescription readers", "magnifying glasses", "blue light blocking glasses", "wholesale reading glasses", "optical frames", "eyeglasses"],
+      features: [
+        "Multiple Diopters - +1.00 to +4.00 magnification options",
+        "Blue Light Filter - Optional anti-blue light coating",
+        "Comfortable Fit - Lightweight frames for extended wear",
+        "Spring Hinges - Durable construction for longevity",
+        "Fashion Frames - Trendy designs for all face shapes",
+        "Custom Packaging - Branded cases and boxes available"
+      ],
+      applications: [
+        "Optical chains and independent opticians",
+        "Pharmacy stores",
+        "Bookstores and libraries",
+        "Senior care facilities",
+        "Corporate wellness programs",
+        "E-commerce eyewear platforms"
+      ],
+      icon: "\u{1F453}"
+    },
+    {
+      name: "Floating Sunglasses",
+      slug: "floating-glasses",
+      title: "Floating Sunglasses for Water Sports | Aurora Eyewear",
+      description: "Waterproof floating sunglasses for fishing, boating, swimming. Lightweight materials that stay afloat. Perfect for outdoor enthusiasts.",
+      keywords: ["floating sunglasses", "water sports eyewear", "fishing sunglasses", "boating glasses", "waterproof sunglasses", "sports sunglasses", "outdoor eyewear"],
+      features: [
+        "Buoyant Design - Naturally floats on water surface",
+        "Lightweight Materials - TR90, polycarbonate, or bamboo frames",
+        "Secure Fit - Non-slip nose pads and temple grips",
+        "Impact Resistant - Durable for active outdoor use",
+        "UV400 Protection - Full sun protection on the water",
+        "Polarized Option - Reduces water glare"
+      ],
+      applications: [
+        "Fishing and boating enthusiasts",
+        "Water sports retailers",
+        "Marina and yacht clubs",
+        "Beach resorts and water parks",
+        "Outdoor adventure companies",
+        "Sports equipment stores"
+      ],
+      icon: "\u{1F30A}"
+    },
+    {
+      name: "Recycled Glasses",
+      slug: "recycled-glasses",
+      title: "Eco Friendly Recycled Sunglasses | Sustainable Eyewear OEM",
+      description: "Environmentally friendly sunglasses made from recycled materials. Bamboo, biodegradable frames. Sustainable eyewear solutions for conscious brands.",
+      keywords: ["eco friendly sunglasses", "recycled glasses", "sustainable eyewear", "bamboo sunglasses", "biodegradable glasses", "green eyewear", "organic sunglasses"],
+      features: [
+        "Recycled Materials - Made from ocean plastic and recycled acetate",
+        "Bamboo Frames - Natural, sustainable, and stylish",
+        "Biodegradable Options - Compostable frame materials",
+        "Eco Packaging - Recycled and minimal packaging",
+        "Carbon Neutral - Offset shipping emissions",
+        "Certified Sustainable - FSC and eco-certifications available"
+      ],
+      applications: [
+        "Eco-conscious retail brands",
+        "Sustainable fashion boutiques",
+        "Green lifestyle stores",
+        "Environmental organizations",
+        "Corporate sustainability initiatives",
+        "Ethical e-commerce platforms"
+      ],
+      icon: "\u267B\uFE0F"
+    },
+    {
+      name: "Novelty Glasses",
+      slug: "novelty-glasses",
+      title: "Novelty & Party Sunglasses | Fun Custom Eyewear",
+      description: "Unique party sunglasses and novelty eyewear. Custom designs for events, promotions, and retail. Bulk pricing available.",
+      keywords: ["novelty sunglasses", "party glasses", "fun eyewear", "custom shape sunglasses", "promotional glasses", "event sunglasses", "themed eyewear"],
+      features: [
+        "Unique Designs - Hearts, stars, oversized, and custom shapes",
+        "Vibrant Colors - Wide range of frame and lens colors",
+        "Custom Shapes - Your design, our manufacturing",
+        "Bulk Pricing - Competitive rates for large orders",
+        "Fast Production - Quick turnaround for events",
+        "Logo Printing - Custom branding on frames or lenses"
+      ],
+      applications: [
+        "Event planners and party suppliers",
+        "Festival and concert merchandise",
+        "Tourist shops and souvenir stores",
+        "Marketing and promotional companies",
+        "Theme parks and attractions",
+        "Photo booth rental companies"
+      ],
+      icon: "\u{1F389}"
+    },
+    {
+      name: "Cases & Accessories",
+      slug: "cases",
+      title: "Glasses Cases & Sunglasses Accessories | Wholesale Eyewear",
+      description: "Premium glasses cases in hard and soft styles. Custom logo options. Wholesale pricing for retailers and optical shops.",
+      keywords: ["glasses cases", "sunglasses cases", "eyewear accessories", "hard case", "soft pouch", "custom logo case", "wholesale cases"],
+      features: [
+        "Hard Cases - EVA and ABS protective cases",
+        "Soft Pouches - Microfiber and leather options",
+        "Custom Branding - Logo embossing and printing",
+        "Multiple Sizes - Fit all eyewear types",
+        "Premium Materials - Quality zippers and linings",
+        "Bulk Discounts - Volume pricing available"
+      ],
+      applications: [
+        "Optical shops and eyewear retailers",
+        "Sunglasses brands (private label)",
+        "Department stores",
+        "Online eyewear sellers",
+        "Corporate gift programs",
+        "Eyewear subscription boxes"
+      ],
+      icon: "\u{1F4E6}"
+    }
+  ];
+  const { slug } = Astro2.params;
+  const product = products.find((p) => p.slug === slug);
+  if (!product) {
+    return Astro2.redirect("/");
+  }
+  return renderTemplate`${renderComponent($$result, "BaseLayout", $$BaseLayout, { "title": product.title, "description": product.description, "keywords": product.keywords }, { "default": ($$result2) => renderTemplate`  ${maybeRenderHead()}<section class="bg-gradient-to-br from-brand-50 to-white py-16 lg:py-24"> <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"> <div class="text-center max-w-4xl mx-auto"> <div class="text-6xl mb-6">${product.icon}</div> <h1 class="font-display text-4xl sm:text-5xl font-bold text-gray-900 mb-6"> ${product.name} </h1> <p class="text-xl text-gray-600 mb-8"> ${product.description} </p> <div class="flex flex-col sm:flex-row gap-4 justify-center"> <a href="/contact" class="bg-brand-600 text-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-brand-700 transition shadow-lg">
+Request Free Samples
+</a> <a href="/contact" class="bg-white text-brand-600 px-8 py-4 rounded-full font-semibold text-lg hover:bg-gray-50 transition border-2 border-brand-200">
+Get Wholesale Price
+</a> </div> </div> </div> </section>  <section class="py-20 bg-white"> <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"> <div class="text-center mb-12"> <h2 class="font-display text-3xl font-bold text-gray-900 mb-4">
+Key Features
+</h2> <p class="text-lg text-gray-600">
+Quality and features that set our products apart
+</p> </div> <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto"> ${product.features.map((feature) => renderTemplate`<div class="flex items-start space-x-4 bg-gray-50 rounded-xl p-6"> <div class="flex-shrink-0 w-6 h-6 bg-brand-100 rounded-full flex items-center justify-center"> <svg class="w-4 h-4 text-brand-600" fill="currentColor" viewBox="0 0 20 20"> <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path> </svg> </div> <p class="text-gray-700">${feature}</p> </div>`)} </div> </div> </section>  <section class="py-20 bg-brand-900 text-white"> <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"> <div class="text-center mb-12"> <h2 class="font-display text-3xl font-bold mb-4">
+Perfect For
+</h2> <p class="text-lg text-brand-100">
+Ideal customers and business types for our products
+</p> </div> <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto"> ${product.applications.map((app) => renderTemplate`<div class="bg-brand-800 rounded-xl p-6"> <div class="flex items-center space-x-3"> <svg class="w-6 h-6 text-brand-400 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"> <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path> </svg> <span class="text-brand-50">${app}</span> </div> </div>`)} </div> </div> </section>  <section class="py-20 bg-white"> <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"> <div class="bg-gradient-to-br from-brand-50 to-brand-100 rounded-3xl p-8 lg:p-12"> <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center"> <div> <h2 class="font-display text-3xl font-bold text-gray-900 mb-4">
+Custom OEM/ODM Services
+</h2> <p class="text-lg text-gray-600 mb-6">
+Want to create your own brand? We offer full customization services including:
+</p> <ul class="space-y-3 mb-8"> <li class="flex items-center space-x-3"> <span class="text-brand-600">✓</span> <span class="text-gray-700">Custom frame design and colors</span> </li> <li class="flex items-center space-x-3"> <span class="text-brand-600">✓</span> <span class="text-gray-700">Logo printing and engraving</span> </li> <li class="flex items-center space-x-3"> <span class="text-brand-600">✓</span> <span class="text-gray-700">Custom packaging and branding</span> </li> <li class="flex items-center space-x-3"> <span class="text-brand-600">✓</span> <span class="text-gray-700">Private label manufacturing</span> </li> </ul> <a href="/contact" class="inline-block bg-brand-600 text-white px-8 py-3 rounded-full font-semibold hover:bg-brand-700 transition">
+Discuss Your Custom Project
+</a> </div> <div class="text-center text-8xl lg:text-9xl">
+🎨
+</div> </div> </div> </div> </section>  <section class="py-20 bg-gray-50"> <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"> <h2 class="font-display text-3xl font-bold text-gray-900 mb-8 text-center">
+Explore More Products
+</h2> <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6"> ${products.filter((p) => p.slug !== slug).slice(0, 3).map((p) => renderTemplate`<a${addAttribute(`/${p.slug}`, "href")} class="block bg-white rounded-2xl p-6 hover:shadow-xl transition"> <div class="text-4xl mb-4">${p.icon}</div> <h3 class="font-display text-xl font-bold text-gray-900 mb-2">${p.name}</h3> <p class="text-gray-600 text-sm mb-4">${p.description}</p> <span class="text-brand-600 font-semibold">Learn More →</span> </a>`)} </div> </div> </section> ` })}`;
+}, "/root/.openclaw/workspace/aurora-sunglasses-website/src/pages/products/[slug].astro", void 0);
+
+const $$file = "/root/.openclaw/workspace/aurora-sunglasses-website/src/pages/products/[slug].astro";
+const $$url = "/products/[slug]";
+
+const _page = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
+  __proto__: null,
+  default: $$slug,
+  file: $$file,
+  prerender,
+  url: $$url
+}, Symbol.toStringTag, { value: 'Module' }));
+
+const page = () => _page;
+
+export { page };

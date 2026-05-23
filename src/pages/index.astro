@@ -1,0 +1,201 @@
+---
+import BaseLayout from '@layouts/BaseLayout.astro';
+
+const title = 'Aurora Sunglasses | Custom OEM/ODM Eyewear Manufacturer | UV Protection & Polarized';
+const description = 'Professional sunglasses manufacturer with 10+ years experience. Custom OEM/ODM designs, UV400 protection, polarized lenses. Wholesale prices for retailers worldwide. Free samples available.';
+const keywords = [
+  'sunglasses manufacturer',
+  'OEM sunglasses',
+  'custom eyewear',
+  'wholesale sunglasses',
+  'polarized sunglasses',
+  'UV protection sunglasses',
+  'reading glasses',
+  'floating sunglasses',
+  'eco friendly eyewear',
+  'ODM eyewear',
+  'bulk sunglasses',
+  'custom logo sunglasses'
+];
+---
+
+<BaseLayout title={title} description={description} keywords={keywords}>
+  <!-- Hero Section -->
+  <section class="relative bg-gradient-to-br from-brand-50 to-brand-100 py-20 lg:py-28">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-4xl mx-auto">
+        <h1 class="font-display text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 mb-6">
+          Custom Sunglasses Manufacturer
+          <span class="block text-brand-600 mt-2">OEM/ODM Eyewear Solutions</span>
+        </h1>
+        <p class="text-lg sm:text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
+          Premium quality sunglasses with UV400 protection and polarized lenses. 
+          Trusted by retailers, distributors, and brands worldwide.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <a href="/contact" class="bg-brand-600 text-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-brand-700 transition shadow-lg">
+            Request Free Samples
+          </a>
+          <a href="/sunglasses" class="bg-white text-brand-600 px-8 py-4 rounded-full font-semibold text-lg hover:bg-gray-50 transition border-2 border-brand-200">
+            View Products
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Trust Badges -->
+  <section class="py-12 bg-white border-b">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+        <div class="text-center">
+          <div class="text-3xl font-bold text-brand-600">10+</div>
+          <div class="text-gray-600">Years Experience</div>
+        </div>
+        <div class="text-center">
+          <div class="text-3xl font-bold text-brand-600">50+</div>
+          <div class="text-gray-600">Countries Served</div>
+        </div>
+        <div class="text-center">
+          <div class="text-3xl font-bold text-brand-600">500+</div>
+          <div class="text-gray-600">New Styles/Year</div>
+        </div>
+        <div class="text-center">
+          <div class="text-3xl font-bold text-brand-600">100%</div>
+          <div class="text-gray-600">Quality Guaranteed</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Product Categories -->
+  <section class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-12">
+        <h2 class="font-display text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
+          Our Product Categories
+        </h2>
+        <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+          Discover our comprehensive range of eyewear solutions for every need and occasion
+        </p>
+      </div>
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Sunglasses -->
+        <a href="/sunglasses" class="group block bg-gray-50 rounded-2xl p-8 hover:shadow-xl transition">
+          <div class="text-4xl mb-4">🕶️</div>
+          <h3 class="font-display text-xl font-bold text-gray-900 mb-2">Polarized Sunglasses</h3>
+          <p class="text-gray-600">UV400 protection, premium lenses, custom designs for retailers and brands.</p>
+          <span class="inline-block mt-4 text-brand-600 font-semibold group-hover:translate-x-2 transition">Learn More →</span>
+        </a>
+        
+        <!-- Reading Glasses -->
+        <a href="/reading-glasses" class="group block bg-gray-50 rounded-2xl p-8 hover:shadow-xl transition">
+          <div class="text-4xl mb-4">👓</div>
+          <h3 class="font-display text-xl font-bold text-gray-900 mb-2">Reading Glasses</h3>
+          <p class="text-gray-600">Stylish frames with precise magnification. Multiple diopter options available.</p>
+          <span class="inline-block mt-4 text-brand-600 font-semibold group-hover:translate-x-2 transition">Learn More →</span>
+        </a>
+        
+        <!-- Floating Glasses -->
+        <a href="/floating-glasses" class="group block bg-gray-50 rounded-2xl p-8 hover:shadow-xl transition">
+          <div class="text-4xl mb-4">🌊</div>
+          <h3 class="font-display text-xl font-bold text-gray-900 mb-2">Floating Sunglasses</h3>
+          <p class="text-gray-600">Waterproof eyewear for water sports. Lightweight materials that stay afloat.</p>
+          <span class="inline-block mt-4 text-brand-600 font-semibold group-hover:translate-x-2 transition">Learn More →</span>
+        </a>
+        
+        <!-- Recycled Glasses -->
+        <a href="/recycled-glasses" class="group block bg-gray-50 rounded-2xl p-8 hover:shadow-xl transition">
+          <div class="text-4xl mb-4">♻️</div>
+          <h3 class="font-display text-xl font-bold text-gray-900 mb-2">Eco-Friendly Glasses</h3>
+          <p class="text-gray-600">Sustainable eyewear from recycled materials. Bamboo and biodegradable options.</p>
+          <span class="inline-block mt-4 text-brand-600 font-semibold group-hover:translate-x-2 transition">Learn More →</span>
+        </a>
+        
+        <!-- Novelty Glasses -->
+        <a href="/novelty-glasses" class="group block bg-gray-50 rounded-2xl p-8 hover:shadow-xl transition">
+          <div class="text-4xl mb-4">🎉</div>
+          <h3 class="font-display text-xl font-bold text-gray-900 mb-2">Novelty & Party Glasses</h3>
+          <p class="text-gray-600">Fun, unique designs for events and promotions. Custom shapes and colors.</p>
+          <span class="inline-block mt-4 text-brand-600 font-semibold group-hover:translate-x-2 transition">Learn More →</span>
+        </a>
+        
+        <!-- Cases -->
+        <a href="/cases" class="group block bg-gray-50 rounded-2xl p-8 hover:shadow-xl transition">
+          <div class="text-4xl mb-4">📦</div>
+          <h3 class="font-display text-xl font-bold text-gray-900 mb-2">Cases & Accessories</h3>
+          <p class="text-gray-600">Premium protection for your eyewear. Hard and soft cases with custom branding.</p>
+          <span class="inline-block mt-4 text-brand-600 font-semibold group-hover:translate-x-2 transition">Learn More →</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Choose Us -->
+  <section class="py-20 bg-brand-900 text-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-12">
+        <h2 class="font-display text-3xl sm:text-4xl font-bold mb-4">
+          Why Choose Aurora Sunglasses?
+        </h2>
+        <p class="text-lg text-brand-100 max-w-2xl mx-auto">
+          We're more than just a manufacturer - we're your partner in eyewear success
+        </p>
+      </div>
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="bg-brand-800 rounded-xl p-6">
+          <div class="text-3xl mb-4">🎨</div>
+          <h3 class="font-display text-xl font-bold mb-2">Custom OEM/ODM Design</h3>
+          <p class="text-brand-100">Our R&D team develops hundreds of new styles annually. Your vision, our expertise.</p>
+        </div>
+        
+        <div class="bg-brand-800 rounded-xl p-6">
+          <div class="text-3xl mb-4">🛡️</div>
+          <h3 class="font-display text-xl font-bold mb-2">UV400 Protection</h3>
+          <p class="text-brand-100">All our lenses provide maximum UV protection, meeting international standards.</p>
+        </div>
+        
+        <div class="bg-brand-800 rounded-xl p-6">
+          <div class="text-3xl mb-4">📦</div>
+          <h3 class="font-display text-xl font-bold mb-2">Wholesale Pricing</h3>
+          <p class="text-brand-100">Competitive prices for bulk orders. MOQ flexibility for growing businesses.</p>
+        </div>
+        
+        <div class="bg-brand-800 rounded-xl p-6">
+          <div class="text-3xl mb-4">🚚</div>
+          <h3 class="font-display text-xl font-bold mb-2">Global Shipping</h3>
+          <p class="text-brand-100">Fast, reliable delivery to 50+ countries. Full logistics support.</p>
+        </div>
+        
+        <div class="bg-brand-800 rounded-xl p-6">
+          <div class="text-3xl mb-4">✅</div>
+          <h3 class="font-display text-xl font-bold mb-2">Quality Control</h3>
+          <p class="text-brand-100">Rigorous QC at every stage. 100% satisfaction guarantee on all orders.</p>
+        </div>
+        
+        <div class="bg-brand-800 rounded-xl p-6">
+          <div class="text-3xl mb-4">🤝</div>
+          <h3 class="font-display text-xl font-bold mb-2">Long-term Partnership</h3>
+          <p class="text-brand-100">We build lasting relationships with clients across Europe, USA, and beyond.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="py-20 bg-white">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h2 class="font-display text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
+        Ready to Start Your Eyewear Business?
+      </h2>
+      <p class="text-lg text-gray-600 mb-8">
+        Get free samples, wholesale price list, and expert consultation today.
+      </p>
+      <a href="/contact" class="inline-block bg-brand-600 text-white px-10 py-4 rounded-full font-semibold text-lg hover:bg-brand-700 transition shadow-lg">
+        Contact Us Now
+      </a>
+    </div>
+  </section>
+</BaseLayout>

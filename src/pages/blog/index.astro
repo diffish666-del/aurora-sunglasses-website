@@ -1,0 +1,72 @@
+---
+import BaseLayout from '@layouts/BaseLayout.astro';
+
+const title = 'Aurora Sunglasses Blog | Eyewear Trends, Tips & Industry Insights';
+const description = 'Expert insights on sunglasses, eyewear trends, UV protection, and industry news. Stay informed about the latest in optical fashion and technology.';
+const keywords = ['sunglasses blog', 'eyewear trends', 'UV protection tips', 'optical industry news', 'fashion glasses guide'];
+
+const posts = [
+  {
+    title: 'How to Choose Sunglasses for Your Face Shape (2026 Guide)',
+    excerpt: 'Find the perfect sunglasses for your face shape. Expert tips on aviator, wayfarer, cat-eye, and more styles.',
+    date: '2026-05-20',
+    slug: 'how-to-choose-sunglasses-for-face-shape',
+    readTime: '5 min read'
+  },
+  {
+    title: 'Polarized vs Non-Polarized Sunglasses: What\'s the Difference?',
+    excerpt: 'Understanding the benefits of polarized lenses and when you need them. Make an informed decision.',
+    date: '2026-05-15',
+    slug: 'polarized-vs-non-polarized-sunglasses',
+    readTime: '4 min read'
+  },
+  {
+    title: 'OEM vs ODM Eyewear: Which is Right for Your Brand?',
+    excerpt: 'Learn the differences between OEM and ODM manufacturing. Choose the best path for your eyewear business.',
+    date: '2026-05-10',
+    slug: 'oem-vs-odm-eyewear',
+    readTime: '6 min read'
+  },
+  {
+    title: 'Top 10 Sunglasses Trends for Retailers in 2026',
+    excerpt: 'Stay ahead of the curve with the hottest sunglasses trends. What\'s selling and what\'s next.',
+    date: '2026-05-01',
+    slug: 'sunglasses-trends-2026',
+    readTime: '7 min read'
+  }
+];
+---
+
+<BaseLayout title={title} description={description} keywords={keywords}>
+  <section class="bg-gradient-to-br from-brand-50 to-white py-16 lg:py-24">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-4xl mx-auto">
+        <h1 class="font-display text-4xl sm:text-5xl font-bold text-gray-900 mb-6">Aurora Blog</h1>
+        <p class="text-xl text-gray-600">
+          Expert insights on eyewear trends, UV protection, and industry news
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        {posts.map((post) => (
+          <article class="bg-gray-50 rounded-2xl p-8 hover:shadow-xl transition">
+            <div class="flex items-center text-sm text-gray-500 mb-4">
+              <span>{post.date}</span>
+              <span class="mx-2">•</span>
+              <span>{post.readTime}</span>
+            </div>
+            <h2 class="font-display text-2xl font-bold text-gray-900 mb-3">{post.title}</h2>
+            <p class="text-gray-600 mb-6">{post.excerpt}</p>
+            <a href={`/blog/${post.slug}`} class="inline-block text-brand-600 font-semibold hover:text-brand-700">
+              Read More →
+            </a>
+          </article>
+        ))}
+      </div>
+    </div>
+  </section>
+</BaseLayout>

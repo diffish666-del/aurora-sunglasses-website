@@ -1,0 +1,125 @@
+---
+import SEO from '@components/SEO.astro';
+
+interface Props {
+  title: string;
+  description: string;
+  keywords?: string[];
+  image?: string;
+  canonicalURL?: string;
+  publishedTime?: string;
+  article?: boolean;
+}
+
+const { title, description, keywords = [], image, canonicalURL, publishedTime, article } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="generator" content={Astro.generator} />
+    
+    <!-- SEO Component -->
+    <SEO 
+      title={title}
+      description={description}
+      keywords={keywords}
+      image={image}
+      canonicalURL={canonicalURL}
+      publishedTime={publishedTime}
+      article={article}
+    />
+  </head>
+  <body class="font-sans antialiased text-gray-900 bg-white">
+    <!-- Header -->
+    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-sm border-b border-gray-100">
+      <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center h-16">
+          <!-- Logo -->
+          <a href="/" class="flex items-center space-x-2">
+            <span class="font-display text-xl font-bold text-brand-700">AURORA</span>
+            <span class="font-display text-xl text-gray-600">SUNGLASSES</span>
+          </a>
+          
+          <!-- Desktop Navigation -->
+          <div class="hidden md:flex items-center space-x-8">
+            <a href="/sunglasses" class="text-gray-700 hover:text-brand-600 font-medium transition">Sunglasses</a>
+            <a href="/reading-glasses" class="text-gray-700 hover:text-brand-600 font-medium transition">Reading Glasses</a>
+            <a href="/floating-glasses" class="text-gray-700 hover:text-brand-600 font-medium transition">Floating Glasses</a>
+            <a href="/recycled-glasses" class="text-gray-700 hover:text-brand-600 font-medium transition">Recycled</a>
+            <a href="/blog" class="text-gray-700 hover:text-brand-600 font-medium transition">Blog</a>
+            <a href="/about" class="text-gray-700 hover:text-brand-600 font-medium transition">About</a>
+            <a href="/contact" class="bg-brand-600 text-white px-5 py-2 rounded-full font-medium hover:bg-brand-700 transition">Contact</a>
+          </div>
+          
+          <!-- Mobile Menu Button -->
+          <button class="md:hidden p-2" aria-label="Menu">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+      <slot />
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white mt-20">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+          <!-- Brand -->
+          <div>
+            <h3 class="font-display text-lg font-bold mb-4">AURORA SUNGLASSES</h3>
+            <p class="text-gray-400 text-sm">
+              Professional sunglasses manufacturer with 10+ years experience. Custom OEM/ODM designs worldwide.
+            </p>
+          </div>
+          
+          <!-- Products -->
+          <div>
+            <h4 class="font-semibold mb-4">Products</h4>
+            <ul class="space-y-2 text-sm text-gray-400">
+              <li><a href="/sunglasses" class="hover:text-white transition">Sunglasses</a></li>
+              <li><a href="/reading-glasses" class="hover:text-white transition">Reading Glasses</a></li>
+              <li><a href="/floating-glasses" class="hover:text-white transition">Floating Glasses</a></li>
+              <li><a href="/recycled-glasses" class="hover:text-white transition">Recycled Glasses</a></li>
+              <li><a href="/novelty-glasses" class="hover:text-white transition">Novelty Glasses</a></li>
+              <li><a href="/cases" class="hover:text-white transition">Cases & Accessories</a></li>
+            </ul>
+          </div>
+          
+          <!-- Company -->
+          <div>
+            <h4 class="font-semibold mb-4">Company</h4>
+            <ul class="space-y-2 text-sm text-gray-400">
+              <li><a href="/about" class="hover:text-white transition">About Us</a></li>
+              <li><a href="/contact" class="hover:text-white transition">Contact</a></li>
+              <li><a href="/blog" class="hover:text-white transition">Blog</a></li>
+              <li><a href="/oem-odm" class="hover:text-white transition">OEM/ODM Services</a></li>
+            </ul>
+          </div>
+          
+          <!-- Contact -->
+          <div>
+            <h4 class="font-semibold mb-4">Contact</h4>
+            <ul class="space-y-2 text-sm text-gray-400">
+              <li>📧 info@aurora-sunglasses.com</li>
+              <li>📱 +86 123 4567 8900</li>
+              <li>📍 Shenzhen, China</li>
+            </ul>
+          </div>
+        </div>
+        
+        <div class="border-t border-gray-800 mt-8 pt-8 text-center text-sm text-gray-400">
+          <p>&copy; {new Date().getFullYear()} Aurora Sunglasses. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
